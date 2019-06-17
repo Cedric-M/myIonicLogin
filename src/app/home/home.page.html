@@ -6,20 +6,24 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content  >
 
-  <ion-item>
-    <ion-label color="primary" floating>login</ion-label>
-    <ion-input type="text" #user></ion-input>
-  </ion-item>
 
-  <ion-item>
-    <ion-label color="primary" floating>password</ion-label>
-      <ion-input type="text" #password></ion-input>
-  </ion-item>
+  <ion-list class="margin_list">
+    <ion-item >
+      <ion-label color="primary" position="floating">login</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
 
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+    <ion-item>
+      <ion-label color="primary" position="floating">password</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button class="margin_button" color="primary" expand="block" shape="round">Sign In</ion-button>
+  <!--
+  <button ion-button color="primary" block (click) = "login({login:user.value,pass:pass.value})" >Sign In</button>
+-->
+
 </ion-content>
