@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Please login below
+      Welcome to the login page !
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -12,20 +12,27 @@
 
           <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
           
-            <ion-list>
+            <div text-center>
+              <h3>Login</h3>
+            </div>
+            
+            <div padding>
               <ion-item >
                 <ion-label color="primary" position="floating">login</ion-label>
-                <ion-input type="text"></ion-input>
+                <ion-input type="text" name="log"></ion-input>
               </ion-item>
 
               <ion-item>
                 <ion-label color="primary" position="floating">password</ion-label>
-                  <ion-input type="text"></ion-input>
+                  <ion-input type="text" name="pwd"></ion-input>
               </ion-item>
-            </ion-list>
+            </div>
 
-            <ion-button color="primary" expand="block" shape="round" href="profile-page">Sign In</ion-button>
-            <!--
+            <div padding>
+              <ion-button color="primary" expand="block" shape="round" href="profile-page">Sign In</ion-button>
+            </div>
+            
+              <!--
             <button ion-button color="primary" block (click) = "login({login:user.value,pass:pass.value})" >Sign In</button>
             -->
             
