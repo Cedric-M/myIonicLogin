@@ -1,5 +1,7 @@
 {
   "name": "myIonicLogin",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
