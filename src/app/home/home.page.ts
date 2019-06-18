@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { logging } from 'protractor';
-import { Router } from '@angular/router';
+import { Router, NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +14,12 @@ export class HomePage {
   constructor(private router: Router) {}
 
   login(loginForm){
-    this.router.navigateByUrl('profile-page')
+    let navigationExtras: NavigationExtras={
+      state: {
+        login: loginForm.value.login
+      }
+    }
+    this.router.navigateByUrl('profile-page',navigationExtras)
   }
 
   
