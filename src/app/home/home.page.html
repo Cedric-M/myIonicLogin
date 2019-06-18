@@ -6,24 +6,31 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content  >
+<ion-content>
+  <ion-grid>
+      <ion-row justify-content-center>
 
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          
+            <ion-list>
+              <ion-item >
+                <ion-label color="primary" position="floating">login</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
 
-  <ion-list class="margin_list">
-    <ion-item >
-      <ion-label color="primary" position="floating">login</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
+              <ion-item>
+                <ion-label color="primary" position="floating">password</ion-label>
+                  <ion-input type="text"></ion-input>
+              </ion-item>
+            </ion-list>
 
-    <ion-item>
-      <ion-label color="primary" position="floating">password</ion-label>
-        <ion-input type="text"></ion-input>
-    </ion-item>
-  </ion-list>
+            <ion-button color="primary" expand="block" shape="round" href="profile-page">Sign In</ion-button>
+            <!--
+            <button ion-button color="primary" block (click) = "login({login:user.value,pass:pass.value})" >Sign In</button>
+            -->
+            
+          </ion-col>
 
-  <ion-button class="margin_button" color="primary" expand="block" shape="round" href="profile-page">Sign In</ion-button>
-  <!--
-  <button ion-button color="primary" block (click) = "login({login:user.value,pass:pass.value})" >Sign In</button>
--->
-
+    </ion-row>
+  </ion-grid>
 </ion-content>
